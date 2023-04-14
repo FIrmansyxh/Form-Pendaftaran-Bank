@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Pendaftaran Bank</title>
+</head>
+<body>
+    <form>
+        <table align="center" width="800px">
+            <thead class="font1">
+                <tr>
+                    <th align="left" style="color:#003A70">
+                        <h4>Formulir Aplikasi Rekening<br>Perorangan (AR01)</h4>
+                    </th>
+                    <th align="right" rowspan="2">
+                        <img src="assets/image/Mandiri.png" alt="Logo Bank" height="80px">
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <div>
+                            <i style="font-size:10px">Diisi oleh Bank</i><br>
+                            <label for="cif"></label>
+                            <div class="cif">
+                                <input value="CIF" style="background-color:#000;color:#fff;font-size:18px;width:60px"
+                                    readonly="readonly">
+                                <input id="cif1" type="text" maxlength="1" size="1">
+                                <input id="cif2" type="text" maxlength="1" size="1">
+                                <input id="cif3" type="text" maxlength="1" size="1">
+                                <input id="cif4" type="text" maxlength="1" size="1">
+                                <input id="cif5" type="text" maxlength="1" size="1">
+                                <input id="cif6" type="text" maxlength="1" size="1">
+                                <input id="cif7" type="text" maxlength="1" size="1">
+                                <input id="cif8" type="text" maxlength="1" size="1">
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="font-size:12px">
+                <tr>
+                    <td style="padding:0 35px" colspan="2">
+                        <div>
+                            <b>Mohon diisi oleh nasabah dengan huruf cetak pada kolom berwarna putih dan berikan tanda
+                                (√) sesuai pilihan</b><br>
+                            <label for="nama">Nama Lengkap :</label>
+                            <input type="text" name="nm_cust" id="nama" style="width:561px"><br>
+                            <span>Nama sesuai Kartu ID: Diinput langsung oleh Petugas ke sistem</span>
+                        </div>
+                        <div class="font1">
+                            <div class="shape1">
+                                <ul style="padding:0">
+                                    <ol>
+                                        <li>DATA NASABAH</li>
+                                    </ol>
+                                </ul>
+                            </div>
+                            <br />
+                            <div>
+                                <div class="shape2 display" style="textindent:40px">ㅤㅤDATA PRIBADI</div>
+                                <span class="font2" style="font-size:12px">
+                                    <input type="radio" name="jenisData" id="new" value="Baru">
+                                    <label for="new">Baru</label>
+                                    <input type="radio" name="jenisData" id="update" value="Pengkinian">
+                                    <label for="update">Pengkinian</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Jenis Kelamin :</pre>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">Pria</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Wanita</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Kewarganegaraan :</pre>
+                            <input type="radio" name="citizen" id="inlander" value="WNI">
+                            <label for="inlander">WNI</label>
+                            <input type="radio" name="citizen" id="stranger" value="WNA">
+                            <label for="stranger">WNA</label>
+                            <label for="country" style="margin-left:152px">Negara :</label>
+                            <input type="text" name="nm_country" id="country">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="born">Tempat Lahir :</label>
+                            </pre>
+                            <input type="text" name="born_plc" id="born" style="width:260px">
+                            <label for="born_dt" style="margin-left:20px">Tanggal Lahir :</label>
+                            <input type="date" name="born_dt" id="born_dt" style="width:205px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="mother">Nama gadis ibu kandung :</label>
+                            </pre>
+                            <input type="text" name="mother_nm" id="mother" style="width:290px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">Jenis Identitas :</pre>
+                            <input type="radio" name="identity1" id="identity1" value="KTP">
+                            <label for="identity1">KTP</label>
+                            <input type="radio" name="identity2" id="identity2" value="SIM">
+                            <label for="identity2">SIM</label>
+                            <input type="radio" name="identity3" id="identity3" value="Passport">
+                            <label for="identity3">Passport dilampiri KITAP/KITAS/KIMS</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="identity_num">Nomor Identitas :</label>
+                            </pre>
+                            <input type="number" name="identity_num" id="identity_num" style="width:255px">
+                            <label for="start_date" style="margin-left:15px">Tanggal Terbit :</label>
+                            <input type="date" name="start_date" id="start_date" style="width:199px">
+                            <label for="due_date" style="margin-left:369px">Tanggal Kadaluarsa :</label>
+                            <input type="date" name="due_date" id="due_date" style="width:173px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">Pendidikan Terakhir :</pre>
+                            <input type="radio" name="elementary" id="elementary" value="SD">
+                            <label for="elementary">SD</label>
+                            <input type="radio" name="junior" id="junior" value="SLTP">
+                            <label for="junior">SLTP</label>
+                            <input type="radio" name="senior" id="senior" value="SLTA">
+                            <label for="senior">SLTA</label>
+                            <input type="radio" name="bachelor" id="bachelor" value="S1">
+                            <label for="bachelor">S1</label>
+                            <input type="radio" name="master" id="master" value="S2">
+                            <label for="master">S2</label>
+                            <input type="radio" name="doctor" id="doctor" value="S3">
+                            <label for="doctor">S3</label>
+                            <input type="radio" name="other_school" id="other_school" value="Lainnya">
+                            <label for="other_school">Lainnya</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Agama :</pre>
+                            <input type="radio" name="islam" id="islam" value="Islam">
+                            <label for="islam">Islam</label>
+                            <input type="radio" name="katolik" id="katolik" value="Katolik">
+                            <label for="katolik">Katolik</label>
+                            <input type="radio" name="protestan" id="protestan" value="Protestan">
+                            <label for="protestan">Protestan</label>
+                            <input type="radio" name="budha" id="budha" value="Budha">
+                            <label for="budha">Budha</label>
+                            <input type="radio" name="hindu" id="hindu" value="Hindu">
+                            <label for="hindu">Hindu</label>
+                            <input type="radio" name="other_religion" id="other_religion" value="Lainnya">
+                            <label for="other_religion">Lainnya</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Status Perkawinan :</pre>
+                            <input type="radio" name="lajang" id="married_sts1" value="Lajang">
+                            <label for="married_sts1">Lajang</label>
+                            <input type="radio" name="kawin" id="married_sts2" value="Kawin">
+                            <label for="married_sts2">Kawin</label>
+                            <input type="radio" name="other_married" id="married_sts3" value="Janda/Duda">
+                            <label for="married_sts3">Janda/Duda</label>
+                            <label for="hobby" style="margin-left:20px">Hobi nasabah :</label>
+                            <input type="text" name="hobby" id="hobby" style="width:172px">
+                        </div>
+                        <div>
+                            <div class="kode_pos">
+                                <input class="font2" value="Kode Pos sesuai alamat pada ID : " style="font-size:12px;width:165px;background-color:#ffffff;outline:0;border-top-style:hidden;border-right-style:hidden;border-left-style:hidden;border-bottom-style:hidden"
+                                    readonly="readonly">
+                                <input id="cif1" type="text" maxlength="1" size="1">
+                                <input id="cif2" type="text" maxlength="1" size="1">
+                                <input id="cif3" type="text" maxlength="1" size="1">
+                                <input id="cif4" type="text" maxlength="1" size="1">
+                                <input id="cif5" type="text" maxlength="1" size="1">
+                                <input id="cif6" type="text" maxlength="1" size="1">
+                                <input id="cif7" type="text" maxlength="1" size="1">
+                                <input id="cif8" type="text" maxlength="1" size="1">
+                            </div>
+                            <br>
+                        </div>
+                        <div>
+                            <br>
+                            <b><label for="domisili">Alamat Domisili (Diisi hanya apabila berbeda dengan alamat pada
+                                    Identitas) :</label></b>
+                            <input type="text" name="domisili" id="domisili" style="width:240px">
+                            <br>
+                            <br>
+                            <input type="text" name="domisili" id="domisili" style="width:570px;margin-left:76px">
+                        </div>
+                        <br>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="rt_rw">RT/RW :</label>
+                            </pre>
+                            <input type="number" name="rt" id="rt_rw" style="width:120px">
+                            <input type="number" name="rw" id="rt_rw" style="width:120px">
+                            <label for="village" style="margin-left:30px">Kelurahan/Desa</label>
+                            <input type="text" name="village" id="village" style="width:197px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="district">Kecamatan :</label>
+                            </pre>
+                            <input type="text" name="district" id="district" style="width:252px">
+                            <pre class="font2 display" style="margin-left:30px">
+                            <label for="city">Kota :</label>
+                            </pre>
+                            <input type="text" name="city" id="city" style="width:212px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="province">Provinsi :</label>
+                            </pre>
+                            <input type="text" name="province" id="province" style="width:251px">
+                            <pre class="font2 display" style="margin-left:30px">
+                            <label for="kd_pos">Kode Pos :</label>
+                            </pre>
+                            <input type="number" name="kd_pos" id="kd_pos" style="width:120px">
+                        </div>
+                        <br>
+                        <div>
+                            <b>Informasi Kontak :</b>
+                            <pre class="font2 display">
+                            <label for="telp">Telepon :</label>
+                            </pre>
+                            <input type="number" name="telp" id="telp" style="width:50px">
+                            <input type="number" name="telp" id="telp">
+                            <label for="telp_hp" style="margin-left:12px">Handphone :</label>
+                            <input type="number" name="telp_hp" id="telp_hp">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="faksimili" style="margin-left:102px">Faksimili :</label>
+                            </pre>
+                            <input type="number" name="faksimili" id="faksimili" style="width:50px">
+                            <input type="number" name="faksimili" id="faksimili">
+                            <pre class="font2 display">
+                            <label for="email" style="margin-left:11px">Email :</label>
+                            </pre>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="shape1 font1" style="text-indent:40px">DATA PEKERJAAN</div>
+                        <div>
+                            <pre class="font2 display">Jenis Pekerjaan :</pre>
+                            <input type="radio" name="pns" id="pns" value="PNS">
+                            <label for="pns">PNS</label>
+                            <input type="radio" name="tni_polri" id="tni_polri" value="TNI/Polri">
+                            <label for="tni_polri">TNI/Polri</label>
+                            <input type="radio" name="swasta" id="swasta" value="Peg. Swasta">
+                            <label for="swasta">Peg. Swasta</label>
+                            <input type="radio" name="bumn" id="bumn" value="Peg. BUMN">
+                            <label for="bumn">Peg. BUMN</label>
+                            <input type="radio" name="pro" id="pro" value="Profesional">
+                            <label for="pro">Profesional</label>
+                            <br>
+                            <input type="radio" name="wiraswasta" id="wiraswasta" value="Wiraswasta"
+                                style="margin-left:125px">
+                            <label for="wiraswasta">Wiraswasta</label>
+                            <input type="radio" name="other_job" id="other_job" value="Lainnya">
+                            <label for="other_job">Lainnya</label>
+                            <input type="text" name="other_job" id="other_job" style="width:362px">
+                        </div>
+                        <div>
+                            <p class="display">
+                                <label for="job_plc">Nama Kantor/Tempat Bekerja :</label>
+                            </p>
+                            <input type="text" name="job_plc" id="job_plc" style="width:492px">
+                        </div>
+                        <div>
+                            <p class="display">
+                                <label for="job_sec">Bidang Pekerjaaan :</label>
+                            </p>
+                            <input type="text" name="job_sec" id="job_sec" style="width:320px">
+                            <p class="display" style="margin-left:3px">Lama Bekerja :</p>
+                            <input type="number" name="year" id="year" style="width:30px">
+                            <label for="year">Tahun</label>
+                            <input type="number" name="month" id="month" style="width:30px">
+                            <label for="month">Bulan</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="pos">Jabatan :</label>
+                            </pre>
+                            <input type="text" name="pos" id="pos" style="width:220px">
+                            <label for="npwp" style="margin-left:9px">NPWP Nasabah :</label>
+                            <input type="number" name="npwp" id="npwp" style="width:220px">
+                        </div>
+                        <div>
+                            <p class="display">
+                                <label for="job_address">Alamat Kantor/Tempat Bekerja :</label>
+                            </p><input type="text" name="job_address" id="job_address" style="width:485px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="rt_rwjob">RT/RW :</label>
+                            </pre>
+                            <input type="number" name="rt_job" id="rt_rw-job" style="width:120px">
+                            <input type="number" name="rw_job" id="rt_rw-job" style="width:120px">
+                            <label for="job_village" style="margin-left:15px">Kelurahan/Desa :</label>
+                            <input type="text" name="job_village" id="job_village" style="width:182px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="job_district">Kecamatan :</label>
+                            </pre>
+                            <input type="text" name="job_district" id="job_district" style="width:252px">
+                            <pre class="font2 display">
+                            <label for="job_city" style="margin-left:15px">Kota :</label>
+                            </pre>
+                            <input type="text" name="job_city" id="job_city" style="width:200px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="job_province">Provinsi :</label>
+                            </pre>
+                            <input type="text" name="job_province" id="job_province" style="width:251px">
+                            <pre class="font2 display">
+                            <label for="job_kdPos" style="margin-left:14px">Kode Pos :</label>
+                            </pre>
+                            <input type="number" name="job_kdPos" id="job_kdPos" style="width:199px">
+                        </div>
+                        <div>
+                            <pre class="font2 display">
+                            <label for="job_telp">Telepon :</label>
+                            </pre>
+                            <input type="number" name="job_telp" id="job_telp" style="width:251px">
+                            <pre class="font2 display">
+                            <label for="job_faksimili" style="margin-left:14px">Faksimili :</label>
+                            </pre>
+                            <input type="number" name="job_faksimili" id="job_faksimili" style="width:198px">
+                        </div>
+                        <div>
+                            <h2 class="font1 display">Alamat Surat Menyurat</h2>
+                            <input type="checkbox" name="envelop1" id="envelop1" value="Sesuai ID">
+                            <label for="envelop1">Sesuai ID</label>
+                            <input type="checkbox" name="envelop2" id="envelop2" value="Sesuai Domisili">
+                            <label for="envelop2">Sesuai Domisili</label>
+                            <input type="checkbox" name="envelop3" id="envelop3" value="Kantor/Tempat Bekerja">
+                            <label for="envelop3">Kantor/Tempat Bekerja</label>
+                        </div>
+                        <div class="shape1 font1" style="text-indent:40px">DATA KEUANGAN</div>
+                        <div>
+                            <p class="display">Penghasilan<br>Nasabah perbulan :</p>
+                            <input type="radio" name="penghasilan1" id="penghasilan1" value="s/d 5juta">
+                            <label for="penghasilan1">s/d 5juta</label>
+                            <input type="radio" name="penghasilan2" id="penghasilan2" value="5-10juta">
+                            <label for="penghasilan2">5-10juta</label>
+                            <input type="radio" name="penghasilan3" id="penghasilan3" value="10-50juta">
+                            <label for="penghasilan3">10-50juta</label>
+                            <input type="radio" name="penghasilan4" id="penghasilan4" value="50-100juta">
+                            <label for="penghasilan4">50-100juta</label>
+                            <input type="radio" name="penghasilan5" id="penghasilan5" value="diatas 100juta">
+                            <label for="penghasilan5">diatas 100juta</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Transaksi Normal<br>Harian :</pre>
+                            <input type="radio" name="pengeluaran1" id="pengeluaran1" value="s/d 10juta">
+                            <label for="pengeluaran1">s/d 10juta</label>
+                            <input type="radio" name="pengeluaran2" id="pengeluaran2" value="s/d 50juta">
+                            <label for="pengeluaran2">s/d 50juta</label>
+                            <input type="radio" name="pengeluaran3" id="pengeluaran3" value="s/d 100juta">
+                            <label for="pengeluaran3">s/d 100juta</label>
+                            <input type="radio" name="pengeluaran4" id="pengeluaran4" value="s/d 1miliar">
+                            <label for="pengeluaran4">s/d 1miliar</label>
+                            <input type="radio" name="pengeluaran5" id="pengeluaran5" value="diatas 1miliar">
+                            <label for="pengeluaran5">diatas 1miliar</label>
+                        </div>
+                        <div>
+                            <pre class="font2 display">Sumber Utama :</pre>
+                            <input type="radio" name="sumber1" id="sumber1" value="Gaji">
+                            <label for="sumber1">Gaji</label>
+                            <input type="radio" name="sumber2" id="sumber2" value="Hasil Usaha">
+                            <label for="sumber2">Hasil Usaha</label>
+                            <input type="radio" name="sumber3" id="sumber3" value="Lainnya">
+                            <label for="sumber3">Lainnya</label>
+                            <input type="text" name="sumber3" id="sumber3" style="width:305px">
+                        </div>
+                        <div>
+                            <div>
+                                <p class="display">Rekening di Bank BRI :</p>
+                                <p class="display" style="margin-left:100px">Rekening di Bank Lain :</p>
+                            </div>
+                            <input type="number" name="rek1" id="rek1">
+                            <label for="bank1" style="margin-left:39px">Bank :</label>
+                            <input type="text" name="bank1" id="bank1" style="width:392px">
+                            <input type="number" name="rek2" id="rek2">
+                            <div class="display">
+                                <span style="margin-left:39px">Jenis :</span>
+                                <input type="checkbox" name="jns1" id="jns1" value="Tabungan" style="margin-left:0">
+                                <label for="jns1">Tabungan</label>
+                                <input type="checkbox" name="jns2" id="jns2" value="Deposito" style="margin-left:0">
+                                <label for="jns2">Deposito</label>
+                                <input type="checkbox" name="jns3" id="jns3" value="Pinjaman" style="margin-left:0">
+                                <label for="jns3">Pinjaman</label>
+                                <input type="checkbox" name="jns4" id="jns4" value="Giro" style="margin-left:0">
+                                <label for="jns4">Giro</label>
+                                <input type="checkbox" name="jns5" id="jns5" value="Lainnya" style="margin-left:0">
+                                <label for="jns5">Lainnya</label>
+                                <input type="text" name="jns5" id="jns5" style="width:86px">
+                            </div>
+                            <input type="number" name="rek3" id="rek3">
+                            <label for="bank2" style="margin-left:39px">Bank :</label>
+                            <input type="text" name="bank2" id="bank2" style="width:392px">
+                            <div class="display">
+                                <span style="margin-left:219px">Jenis :</span>
+                                <input type="checkbox" name="jns12" id="jns12" value="Tabungan" style="margin-left:0">
+                                <label for="jns12">Tabungan</label>
+                                <input type="checkbox" name="jns22" id="jns22" value="Deposito" style="margin-left:0">
+                                <label for="jns22">Deposito</label>
+                                <input type="checkbox" name="jns32" id="jns32" value="Pinjaman" style="margin-left:0">
+                                <label for="jns32">Pinjaman</label>
+                                <input type="checkbox" name="jns42" id="jns42" value="Giro" style="margin-left:0">
+                                <label for="jns4">Giro</label>
+                                <input type="checkbox" name="jns52" id="jns52" value="Lainnya" style="margin-left:0">
+                                <label for="jns52">Lainnya</label>
+                                <input type="text" name="jns52" id="jns52" style="width:86px">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p class="display">Kartu Kredit BRI :</p>
+                                <p class="display" style="margin-left:50px">Kartu Kredit Lain :</p>
+                            </div>
+                            <input type="radio" name="kreditBRI1" id="kreditBRI1" value="Ada" style="margin-left:0">
+                            <label for="kreditBRI1">Ada</label>
+                            <div class="display">
+                                <label for="kreditLain1" style="margin-left:102px">Penerbit :</label>
+                                <input type="text" name="kreditLain1" id="kreditLain1">
+                                <input type="checkbox" name="kredit_classic1" id="kredit_classic1" value="Classic">
+                                <label for="kredit_classic1">Classic</label>
+                                <input type="checkbox" name="kredit_gold1" id="kredit_gold1" value="Gold">
+                                <label for="kredit_gold1">Gold</label>
+                                <input type="checkbox" name="kredit_platinum1" id="kredit_platinum1" value="Platinum">
+                                <label for="kredit_platinum1">Platinum</label>
+                            </div>
+                            <br>
+                            <input type="radio" name="kreditBRI2" id="kreditBRI2" value="Tidak" style="margin-left:0">
+                            <label for="kreditBRI2">Tidak</label>
+                            <div class="display">
+                                <label for="kreditLain2" style="margin-left:94px">Penerbit :</label>
+                                <input type="text" name="kreditLain2" id="kreditLain2">
+                                <input type="checkbox" name="kredit_classic2" id="kredit_classic2" value="Classic">
+                                <label for="kredit_classic2">Classic</label>
+                                <input type="checkbox" name="kredit_gold2" id="kredit_gold2" value="Gold">
+                                <label for="kredit_gold2">Gold</label>
+                                <input type="checkbox" name="kredit_platinum2" id="kredit_platinum2" value="Platinum">
+                                <label for="kredit_platinum2">Platinum</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <br>
+                        <input type="button" value="Submit Form"
+                            style="height:50px;width:100%;font-weight:800;color:#09539c"
+                            onclick='alert("Terima kasih telah mengisi form ini!")'>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

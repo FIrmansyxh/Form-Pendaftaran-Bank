@@ -1,0 +1,76 @@
+.nav{
+    position:absolute;
+    content:"";right:0;
+    width:35%;
+    height:20px;
+    border-radius:5px;
+    background-color:#FFB700
+  }
+
+.shape1{
+    position:relative;
+    height:20px;
+    width:100%;
+    color:#fff;
+    border-radius:5px;
+    background-color:#003A70
+}
+.shape1::before{
+    position:absolute;
+    content:"";right:0;
+    width:35%;
+    height:20px;
+    border-radius:5px;
+    background-color:#FFB700
+}
+.shape2{
+    height:20px;
+    width:65%;
+    color:#fff;
+    border-radius:5px;
+    background-color:#003A70
+}
+.font1{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:18px
+}
+.font2{
+    font-family:'Times New Roman',Times,serif
+}
+.display{
+    display:inline-block
+}
+table{
+    background:#ffffff;
+    padding:0 35px
+}
+input[type=checkbox],input[type=radio]{margin-left:20px}
+.cif input{
+    border-collapse:collapse;
+    display:flex;
+    padding:0;
+    margin:0;
+    outline:0;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    text-align:center;
+    display:block;
+    float:left
+}
+.kode_pos input{
+    border-collapse:collapse;
+    display:flex;
+    padding:0;
+    margin:0;
+    outline:0;
+    width:20px;
+    height:20px;
+    font-size:12px;
+    text-align:center;
+    display:block;
+    float:left
+}
+.textindent{
+    font-size: 40px;
+}
